@@ -1,9 +1,10 @@
+const base = import.meta.env.BASE_URL;
 const projects = [
   {
     id: 1,
     title: "MealMate",
     desc: "A smart meal planning and recipe finder app with weekly planner, ingredient-based search, and shopping list generation.",
-    image: "/projects/mealmate.jfif",
+   image: `${base}projects/mealmate.jfif`,
     isMobile: true, // <--- ADD THIS
     longDesc: `
       MealMate is a mobile application designed to simplify weekly meal planning.
@@ -24,7 +25,7 @@ const projects = [
     id: 2,
     title: "WasteWise",
     desc: "A sustainability-focused waste management system with item scanning, gamification, educational content, and community participation.",
-    image: "/projects/wastewise.JPG",
+  image: `${base}projects/wastewise.JPG`,
     isMobile: false, // <--- ADD THIS (Web App)
     longDesc: `
       WasteWise promotes proper waste disposal through scanning, rewards,
@@ -44,7 +45,7 @@ const projects = [
     id: 3,
     title: "WordWeave",
     desc: "A word puzzle game with CS-related questions, levels, and a timer.",
-    image: "/projects/wordweave.jfif",
+  image: `${base}projects/wordweave.jfif`,
     isMobile: true, // <--- ADD THIS
     longDesc: `
       WordWeave challenges players with computer science themed puzzles
@@ -63,7 +64,7 @@ const projects = [
     id: 4,
     title: "CashFlow Monitoring System",
     desc: "A Flutter-based office cash flow and attendance monitoring app.",
-    image: "/projects/cashflow.jfif",
+    image: `${base}projects/cashflow.jfif`,
     isMobile: true, // <--- ADD THIS
     longDesc: `
       CashFlow helps offices manage attendance, cash-in, cash-out,
