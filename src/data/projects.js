@@ -4,8 +4,8 @@ const projects = [
     id: 1,
     title: "MealMate",
     desc: "A smart meal planning and recipe finder app with weekly planner, ingredient-based search, and shopping list generation.",
-   image: `${base}projects/mealmate.jfif`,
-    isMobile: true, // <--- ADD THIS
+    image: `${base}projects/mealmate.jfif`,
+    isMobile: true,
     longDesc: `
       MealMate is a mobile application designed to simplify weekly meal planning.
       It allows users to filter meals, find recipes based on available ingredients,
@@ -25,8 +25,8 @@ const projects = [
     id: 2,
     title: "WasteWise",
     desc: "A sustainability-focused waste management system with item scanning, gamification, educational content, and community participation.",
-  image: `${base}projects/wastewise.JPG`,
-    isMobile: false, // <--- ADD THIS (Web App)
+    image: `${base}projects/wastewise.JPG`,
+    isMobile: false,
     longDesc: `
       WasteWise promotes proper waste disposal through scanning, rewards,
       and educational content.
@@ -45,8 +45,8 @@ const projects = [
     id: 3,
     title: "WordWeave",
     desc: "A word puzzle game with CS-related questions, levels, and a timer.",
-  image: `${base}projects/wordweave.jfif`,
-    isMobile: true, // <--- ADD THIS
+    image: `${base}projects/wordweave.jfif`,
+    isMobile: true,
     longDesc: `
       WordWeave challenges players with computer science themed puzzles
       across multiple levels.
@@ -65,7 +65,7 @@ const projects = [
     title: "CashFlow Monitoring System",
     desc: "A Flutter-based office cash flow and attendance monitoring app.",
     image: `${base}projects/cashflow.jfif`,
-    isMobile: true, // <--- ADD THIS
+    isMobile: true,
     longDesc: `
       CashFlow helps offices manage attendance, cash-in, cash-out,
       and remaining balances using role-based access.
@@ -78,7 +78,47 @@ const projects = [
       "Automatic balance computation"
     ],
     tech: ["Flutter", "Supabase"]
+  },
+
+  {
+    id: 5,
+    title: "Butterflyfish Detector",
+    desc: "A machine learning project using YOLOv8 to detect and classify butterflyfish species in underwater footage.",
+    image: `${base}projects/butterflyfish.jfif`,
+    isMobile: true, 
+    longDesc: `
+      This system utilizes computer vision algorithms to automate the identification of butterflyfish. 
+      It is designed to assist marine biologists in population monitoring by processing underwater images 
+      and video streams with high accuracy.
+    `,
+    features: [
+      "Real-time Object Detection",
+      "Species Classification",
+      "Confidence Score Analysis",
+      "Heatmap Generation",
+      "Batch Image Processing"
+    ],
+    tech: ["Python", "YOLOv8", "OpenCV", "PyTorch"]
+  },
+
+  // --- NEW PROJECT ADDED BELOW ---
+  {
+    id: 6,
+    title: "Birthing Clinic Management System",
+    desc: "A comprehensive web-based platform for managing patient records, admission, billing, and appointments in a maternity clinic.",
+    image: `${base}projects/liangabirth.JPG`, // Make sure to add this image!
+    isMobile: false, // Set to 'false' (Web Dashboard)
+    longDesc: `
+      This management system streamlines daily operations for birthing clinics. 
+      It replaces manual record-keeping with a secure digital database, allowing staff 
+      to track patient progress from prenatal checkups to discharge and billing.
+    `,
+    features: [
+      "Patient Record Management",
+      "Automated Billing & Invoicing",
+      "Prenatal Checkup Scheduling",
+    ],
+    tech: ["PHP", "MySQL", "Bootstrap", "JavaScript"]
   }
 ];
-
 export default projects;
